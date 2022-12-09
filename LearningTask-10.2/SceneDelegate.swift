@@ -18,10 +18,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        let _ = TreinosAPI()
+        let treinosAPI = TreinosAPI()
         let refeicoesAPI = RefeicoesAPI()
         
-        let refeicoesViewController = (window!.rootViewController as! UINavigationController).topViewController as! RefeicoesViewController
+        let tabBarController = window?.rootViewController as! UITabBarController
+        
+        let treinosViewController = (tabBarController.viewControllers![0] as? UINavigationController)?.topViewController as! TreinosViewController
+        
+        treinosViewController.treinosApi = treinosAPI
+        
+        let refeicoesViewController = (tabBarController.viewControllers![1] as? UINavigationController)?.topViewController as! RefeicoesViewController
+        
         refeicoesViewController.refeicoesAPI = refeicoesAPI
     }
 

@@ -9,9 +9,9 @@ import UIKit
 
 class IngredienteTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var simboloLabel: UILabel!
-    @IBOutlet weak var nomeLabel: UILabel!
-    @IBOutlet weak var quantidadeLabel: UILabel!
+    @IBOutlet private weak var simboloLabel: UILabel!
+    @IBOutlet private weak var nomeLabel: UILabel!
+    @IBOutlet private weak var quantidadeLabel: UILabel!
     
     var ingrediente: Ingrediente? {
        didSet {

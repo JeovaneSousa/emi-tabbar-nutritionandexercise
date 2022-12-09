@@ -70,7 +70,6 @@ extension RefeicoesViewController {
         guard let controllerDestino = segue.destination as? NovaRefeicaoViewController else {
             fatalError("Não foi possível executar a segue \(segue.identifier!)")
         }
-        
         controllerDestino.delegate = self
     }
     

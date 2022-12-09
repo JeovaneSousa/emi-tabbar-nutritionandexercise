@@ -28,6 +28,12 @@
 		587D9E6D288951F2005F9CA8 /* NovaRefeicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587D9E6C288951F2005F9CA8 /* NovaRefeicaoViewController.swift */; };
 		587D9E7028896EFC005F9CA8 /* NovoIngredienteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587D9E6F28896EFC005F9CA8 /* NovoIngredienteViewController.swift */; };
 		587D9E7428899F8B005F9CA8 /* Alert+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587D9E7328899F8B005F9CA8 /* Alert+UIViewController.swift */; };
+		D9879892294221C20041B7D1 /* TreinosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9879891294221C20041B7D1 /* TreinosViewController.swift */; };
+		D9879895294229910041B7D1 /* TreinosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9879894294229910041B7D1 /* TreinosTableViewCell.swift */; };
+		D987989A294258960041B7D1 /* DetalhesTreinoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9879899294258960041B7D1 /* DetalhesTreinoViewController.swift */; };
+		D997D63A2942F58F000C94BA /* NovoExercicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D997D6392942F58F000C94BA /* NovoExercicioViewController.swift */; };
+		D997E122294265CE00D9935B /* ExercicioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D997E121294265CE00D9935B /* ExercicioTableViewCell.swift */; };
+		D997E124294270A100D9935B /* NovoTreinoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D997E123294270A100D9935B /* NovoTreinoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +60,12 @@
 		587D9E6C288951F2005F9CA8 /* NovaRefeicaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaRefeicaoViewController.swift; sourceTree = "<group>"; };
 		587D9E6F28896EFC005F9CA8 /* NovoIngredienteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoIngredienteViewController.swift; sourceTree = "<group>"; };
 		587D9E7328899F8B005F9CA8 /* Alert+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+UIViewController.swift"; sourceTree = "<group>"; };
+		D9879891294221C20041B7D1 /* TreinosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinosViewController.swift; sourceTree = "<group>"; };
+		D9879894294229910041B7D1 /* TreinosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinosTableViewCell.swift; sourceTree = "<group>"; };
+		D9879899294258960041B7D1 /* DetalhesTreinoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesTreinoViewController.swift; sourceTree = "<group>"; };
+		D997D6392942F58F000C94BA /* NovoExercicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoExercicioViewController.swift; sourceTree = "<group>"; };
+		D997E121294265CE00D9935B /* ExercicioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercicioTableViewCell.swift; sourceTree = "<group>"; };
+		D997E123294270A100D9935B /* NovoTreinoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoTreinoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,10 @@
 		58089E55289C1DF8001F8607 /* Treinos */ = {
 			isa = PBXGroup;
 			children = (
+				D987988F2942219B0041B7D1 /* ListaTreinos */,
+				D9879896294258010041B7D1 /* DetalhesTreino */,
+				D98798972942583F0041B7D1 /* NovoTreino */,
+				D98798982942585F0041B7D1 /* NovoExercicio */,
 			);
 			path = Treinos;
 			sourceTree = "<group>";
@@ -196,6 +212,7 @@
 				587D9E60288857EC005F9CA8 /* DefaultTableHeaderView.swift */,
 				587D9E63288878FE005F9CA8 /* DetailsTableHeaderView.swift */,
 				587D9E6728888E0E005F9CA8 /* IngredienteTableViewCell.swift */,
+				D997E121294265CE00D9935B /* ExercicioTableViewCell.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -230,6 +247,47 @@
 				587D9E7328899F8B005F9CA8 /* Alert+UIViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D987988F2942219B0041B7D1 /* ListaTreinos */ = {
+			isa = PBXGroup;
+			children = (
+				D9879891294221C20041B7D1 /* TreinosViewController.swift */,
+				D98798932942296B0041B7D1 /* View */,
+			);
+			path = ListaTreinos;
+			sourceTree = "<group>";
+		};
+		D98798932942296B0041B7D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9879894294229910041B7D1 /* TreinosTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9879896294258010041B7D1 /* DetalhesTreino */ = {
+			isa = PBXGroup;
+			children = (
+				D9879899294258960041B7D1 /* DetalhesTreinoViewController.swift */,
+			);
+			path = DetalhesTreino;
+			sourceTree = "<group>";
+		};
+		D98798972942583F0041B7D1 /* NovoTreino */ = {
+			isa = PBXGroup;
+			children = (
+				D997E123294270A100D9935B /* NovoTreinoViewController.swift */,
+			);
+			path = NovoTreino;
+			sourceTree = "<group>";
+		};
+		D98798982942585F0041B7D1 /* NovoExercicio */ = {
+			isa = PBXGroup;
+			children = (
+				D997D6392942F58F000C94BA /* NovoExercicioViewController.swift */,
+			);
+			path = NovoExercicio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,7 +365,9 @@
 				587D9E6628888515005F9CA8 /* DefaultTableSectionHeaderView.swift in Sources */,
 				587D9E5028884B3C005F9CA8 /* RefeicoesViewController.swift in Sources */,
 				587D9E5C28885032005F9CA8 /* Theme.swift in Sources */,
+				D997E124294270A100D9935B /* NovoTreinoViewController.swift in Sources */,
 				587D9E5728884C02005F9CA8 /* Refeicao.swift in Sources */,
+				D9879892294221C20041B7D1 /* TreinosViewController.swift in Sources */,
 				587D9E5F2888575E005F9CA8 /* LogoTitleView.swift in Sources */,
 				587D9E5328884B8D005F9CA8 /* RefeicaoTableViewCell.swift in Sources */,
 				58089E5F289C35AB001F8607 /* TreinosAPI.swift in Sources */,
@@ -316,11 +376,15 @@
 				587D9E61288857EC005F9CA8 /* DefaultTableHeaderView.swift in Sources */,
 				587D9E34288848E7005F9CA8 /* AppDelegate.swift in Sources */,
 				58089E5D289C356A001F8607 /* Treino.swift in Sources */,
+				D987989A294258960041B7D1 /* DetalhesTreinoViewController.swift in Sources */,
+				D997D63A2942F58F000C94BA /* NovoExercicioViewController.swift in Sources */,
 				587D9E7028896EFC005F9CA8 /* NovoIngredienteViewController.swift in Sources */,
+				D997E122294265CE00D9935B /* ExercicioTableViewCell.swift in Sources */,
 				587D9E5528884BD8005F9CA8 /* DetalhesRefeicaoViewController.swift in Sources */,
 				587D9E64288878FE005F9CA8 /* DetailsTableHeaderView.swift in Sources */,
 				587D9E36288848E7005F9CA8 /* SceneDelegate.swift in Sources */,
 				587D9E6828888E0E005F9CA8 /* IngredienteTableViewCell.swift in Sources */,
+				D9879895294229910041B7D1 /* TreinosTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
