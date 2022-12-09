@@ -34,7 +34,6 @@ class NovoTreinoViewController: UIViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         atualizaViews()

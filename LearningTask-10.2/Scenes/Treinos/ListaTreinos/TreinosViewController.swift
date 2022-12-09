@@ -32,9 +32,7 @@ class TreinosViewController: UITableViewController {
         guard let api = treinosApi else {return}
         treinos = api.carregaTodos()
     }
-    
 }
-
 //MARK: - Implements transitions
 extension TreinosViewController {
     
@@ -47,8 +45,10 @@ extension TreinosViewController {
               let chosenSegue = PossibleSegues(rawValue: segueId) else {return}
         
         switch chosenSegue {
+            
         case .verDetalhesTreino:
             prepareForDetalhesTreinoSegue(segue, sender)
+            
         case .verFormNovoTreino:
             prepareForNovoTreinoSegue(segue, sender)
         }
@@ -59,10 +59,10 @@ extension TreinosViewController {
              let destino = segue.destination as? DetalhesTreinoViewController else {
             fatalError("Unable to acquire necessary data to complete segue: \(segue.identifier!)")
         }
+        
         destino.treino = cell.treino
-        
-        
     }
+    
     private func prepareForNovoTreinoSegue(_ segue: UIStoryboardSegue,_ sender: Any?){
         guard let destination = segue.destination as? NovoTreinoViewController else {
             fatalError("Unable to acquire necessary data to complete segue: \(segue.identifier!)")
@@ -71,17 +71,12 @@ extension TreinosViewController {
         destination.delegate = self
     }
 }
-    
-
 //MARK: - Implements Delegation
 extension TreinosViewController: NovoTreinoViewControllerDelegate {
     func novoTreinoViewController(_ viewController: NovoTreinoViewController, adicionou treino: Treino) {
         treinos.append(treino)
     }
-    
-    
 }
-
 //MARK: - Implements DataSource
 extension TreinosViewController {
     
@@ -93,8 +88,10 @@ extension TreinosViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TreinoTableViewCell", for: indexPath) as? TreinosTableViewCell else {
             fatalError("Unable to acquire TreinosViewCell to present.")
         }
+        
         let treino = treinos[indexPath.row]
         cell.treino = treino
+        
         return cell
     }
 }

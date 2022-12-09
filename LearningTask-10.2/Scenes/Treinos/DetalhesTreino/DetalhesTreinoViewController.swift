@@ -41,6 +41,7 @@ class DetalhesTreinoViewController: UITableViewController {
         
         let exercicio = treino.exercicios[indexPath.row]
         cell.exercicio = exercicio
+        
         return cell
     }
 

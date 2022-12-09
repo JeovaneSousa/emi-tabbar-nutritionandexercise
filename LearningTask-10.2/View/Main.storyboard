@@ -744,7 +744,7 @@
             </objects>
             <point key="canvasLocation" x="-1010" y="-520"/>
         </scene>
-        <!--Treinos-->
+        <!--Plano de treino-->
         <scene sceneID="Jgt-I7-7rh">
             <objects>
                 <tableViewController id="ptE-7i-jbn" customClass="TreinosViewController" customModule="LearningTask_10_2" customModuleProvider="target" sceneMemberID="viewController">
@@ -847,7 +847,7 @@
                             <outlet property="delegate" destination="ptE-7i-jbn" id="5Y8-r9-N7O"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Treinos" id="PSr-ah-pdd">
+                    <navigationItem key="navigationItem" title="Plano de treino" id="PSr-ah-pdd">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="Rhd-ns-1bL">
                             <color key="tintColor" name="Downriver"/>
                         </barButtonItem>

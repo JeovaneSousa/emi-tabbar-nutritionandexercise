@@ -23,6 +23,4 @@ class ExercicioTableViewCell: UITableViewCell {
             descricaoLabel.text = exercicio.descricao
         }
     }
-    
-    
 }

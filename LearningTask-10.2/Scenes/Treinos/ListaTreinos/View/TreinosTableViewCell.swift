@@ -9,7 +9,6 @@ import UIKit
 
 class TreinosTableViewCell: UITableViewCell {
     
-    
     @IBOutlet weak var simboloLabel: UILabel!
     @IBOutlet weak var tituloLabel: UILabel!
     @IBOutlet weak var descricaoLabel: UILabel!
@@ -23,5 +22,4 @@ class TreinosTableViewCell: UITableViewCell {
             descricaoLabel.text = treino.descricao
         }
     }
-
 }

@@ -22,5 +22,4 @@ class IngredienteTableViewCell: UITableViewCell {
            quantidadeLabel.text = ingrediente.quantidade
         }
     }
-
 }

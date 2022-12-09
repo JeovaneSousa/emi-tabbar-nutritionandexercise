@@ -58,8 +58,6 @@ class NovoExercicioViewController: UIViewController {
                                   nome: nomeTextField.text!,
                                   descricao: descricaoTextField.text!)
         
-        print(exercicio)
-        
         delegate?.novoExercicioViewController(self, adicionou: exercicio)
         
         self.dismiss(animated: true)
@@ -68,12 +66,7 @@ class NovoExercicioViewController: UIViewController {
     
 // MARK: - UITextField delegation related code
 extension NovoExercicioViewController: UITextFieldDelegate {
-    
-    /**
-     Método sobrescrito para capturar o evento de alteração do conjunto de caracteres em um TextInput para o qual este objeto tenha sido apontado como delegate. Através deste método é possível controlar as alterações permitindo ou não que elas ocorram segundo algum critério de escolha.
-     
-     A implementação permite a inclusão de um novo caractere apenas se o campo de texto tiver texto corrente vazio ou se a inclusão for de um string vazia representando um backspace. Ou seja, será permitida apenas e digitação de um único caractere para este campo de texto.
-     */
+
     func textField(_ textField: UITextField,
                    shouldChangeCharactersIn range: NSRange,
                    replacementString string: String) -> Bool {
@@ -83,7 +76,6 @@ extension NovoExercicioViewController: UITextFieldDelegate {
         
         return true
     }
-        
 }
     
 
